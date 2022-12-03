@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import { Stack } from '@mui/material';
+import { Box, Stack } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Switch, { SwitchProps } from '@mui/material/Switch';
@@ -36,6 +36,7 @@ import SceneView from "@arcgis/core/views/SceneView";
 import WebMap from "@arcgis/core/WebMap";
 import ArcGISMap from "@arcgis/core/Map";
 import WebScene from "@arcgis/core/WebScene";
+import ProgressCard from '../Dashboard/ProgressCard';
 
 const Highway = () => {
     const mapDiv = useRef(null);
@@ -191,86 +192,94 @@ const Highway = () => {
                     <div className="mapDiv" ref={mapDiv} style={{ display: show3dMap ? "none" : "flex" }}></div>
                     <div className="mapDiv" ref={threeDMapDiv} style={{ display: show3dMap ? "flex" : "none" }}></div>
                 </Grid>
-                <Grid container item md={3} xs={12} spacing={0} justifyContent="center">
+                <Grid container item md={3} xs={12} spacing={0} justifyContent="center" alignContent="space-evenly" >
                     <Stack spacing={2}>
-                        <Card variant="outlined" sx={{ height: 60 }}>
+                        <Card variant="outlined" sx={{ height:'90'}}>
                             <CardContent>
-                                <Stack direction="row" spacing={1} alignItems="center" justifyContent="space-between">
-                                    <Stack direction="row" spacing={1} alignItems="center">
-                                        <img height={30} src={Intersection} />
+                                <Stack direction="column" spacing={1} alignItems="center" justifyContent="space-between">
+                                    <Stack direction='row' spacing={3} alignItems="center">
+                                        <img height={30} src={Intersection}/>
                                         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                                             Service Road
                                         </Typography>
                                     </Stack>
+                                    <Box>
 
+                                    <ProgressCard value="2.996"/>
+                                    </Box>
 
-                                    <Typography sx={{ fontSize: 14, fontWeight: 600 }} color="text.secondary" gutterBottom>
+                                    {/* <Typography sx={{ fontSize: 14, fontWeight: 600 }} color="text.secondary" gutterBottom>
                                         2.996
-                                    </Typography>
+                                    </Typography> */}
                                 </Stack>
                             </CardContent>
                         </Card>
-                        <Card variant="outlined" sx={{ height: 60 }}>
+                        <Card variant="outlined" sx={{ height:90}}>
+                        {/* sx={{ height: 60 }} */}
                             <CardContent>
-                                <Stack direction="row" spacing={1} alignItems="center" justifyContent="space-between">
-                                    <Stack direction="row" spacing={1} alignItems="center">
+                                <Stack direction="column" spacing={1} alignItems="center" justifyContent="space-between">
+                                    <Stack direction='row' spacing={3} alignItems="center">
                                         <img height={30} src={Intersection} />
                                         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                                             Uniform Carriage
                                         </Typography>
                                     </Stack>
 
-                                    <Typography sx={{ fontSize: 14, fontWeight: 600 }} color="text.secondary" gutterBottom>
-                                        0
-                                    </Typography>
+                                    <Box>
+
+                                    <ProgressCard value="0"/>
+                                    </Box>
                                 </Stack>
                             </CardContent>
                         </Card>
-                        <Card variant="outlined" sx={{ height: 60 }}>
+                        <Card variant="outlined" sx={{ height:90}}>
                             <CardContent>
-                                <Stack direction="row" spacing={1} alignItems="center" justifyContent="space-between">
-                                    <Stack direction="row" spacing={1} alignItems="center">
+                                <Stack direction="column" spacing={1} alignItems="center" justifyContent="space-between">
+                                    <Stack direction="row" spacing={3} alignItems="center">
                                         <img height={30} src={Intersection} />
                                         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                                             Damaged Barriers
                                         </Typography>
                                     </Stack>
 
-                                    <Typography sx={{ fontSize: 14, fontWeight: 600 }} color="text.secondary" gutterBottom>
-                                        0.998
-                                    </Typography>
+                                    <Box>
+
+                                    <ProgressCard value="0.998"/>
+                                    </Box>
                                 </Stack>
                             </CardContent>
                         </Card>
-                        <Card variant="outlined" sx={{ height: 60 }}>
+                        <Card variant="outlined" sx={{height:90}}>
                             <CardContent>
-                                <Stack direction="row" spacing={1} alignItems="center" justifyContent="space-between">
-                                    <Stack direction="row" spacing={1} alignItems="center">
+                                <Stack direction="column" spacing={1} alignItems="center" justifyContent="space-between">
+                                    <Stack direction='row' spacing={3} alignItems="center">
                                         <img height={30} src={Intersection} />
                                         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                                             Plantations
                                         </Typography>
                                     </Stack>
 
-                                    <Typography sx={{ fontSize: 14, fontWeight: 600 }} color="text.secondary" gutterBottom>
-                                        2.99
-                                    </Typography>
+                                    <Box>
+
+                                    <ProgressCard value="2.99"/>
+                                    </Box>
                                 </Stack>
                             </CardContent>
                         </Card>
-                        <Card variant="outlined" sx={{ height: 60 }}>
+                        <Card variant="outlined" sx={{height:90}}>
                             <CardContent>
-                                <Stack direction="row" spacing={1} alignItems="center" justifyContent="space-between">
-                                    <Stack direction="row" spacing={1} alignItems="center">
+                                <Stack direction="column" spacing={1} alignItems="center" justifyContent="space-between">
+                                    <Stack direction='row' spacing={3} alignItems="center">
                                         <img height={30} src={Intersection} />
                                         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                                             Cross Movement Structures
                                         </Typography>
                                     </Stack>
 
-                                    <Typography sx={{ fontSize: 14, fontWeight: 600 }} color="text.secondary" gutterBottom>
-                                        2
-                                    </Typography>
+                                    <Box>
+
+                                    <ProgressCard value="2"/>
+                                    </Box>
                                 </Stack>
                             </CardContent>
                         </Card>
