@@ -32,7 +32,7 @@ export default function HighwaySafety() {
             <Grid item lg={3} xl={1.6}>
               <TwoCard image={drone} text={"Drone Data"} />
             </Grid>
-            <Grid item lg={9} xl={3}>
+            <Grid item lg={9} xl={3}> 
               <Gauge />
             </Grid>
             <Grid item lg={6} xl={4}>

@@ -70,7 +70,7 @@ import scanCard from "./Icons/scanCard.svg"
 import BillingManagement from "./Icons/BillingManagement.svg"
 
 import NavajnaLogo from './Images/navajna.png'
-import Intersection from "./Images/intersection.png";
+import Intersection from "./Images/Intersection.png";
 
 export {
   lines,

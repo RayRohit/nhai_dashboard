@@ -44,6 +44,8 @@ import PageTwo from "../../Dashboard/PageTwo";
 import HighwaySafety from "../../Dashboard/HighwaySafety";
 import UserSafety from "../../Dashboard/UserSafety";
 import UserServices from "../../Dashboard/UserSafety";
+import HighwayStrength from "../../Dashboard/HighwayStrength";
+import HighwayProgress from "../../Dashboard/HighwayProgress";
 
 const drawerWidth = 240;
 
@@ -299,6 +301,8 @@ const Navbar = () => {
               <Route path="highway" element={<Highway />} />
               <Route path="highway-safety" element={<HighwaySafety />} />
               <Route path="user-services" element={<UserServices />} />
+              <Route path="phonebookcontacts" element={<HighwayStrength  />} />
+              <Route path="highwayprogress" element={<HighwayProgress  />} />
             </Routes>
           </Box>
         </Container>

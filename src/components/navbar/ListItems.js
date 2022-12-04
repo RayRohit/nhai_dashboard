@@ -62,7 +62,7 @@ export const MainListItems = ({ open }) => {
               onClick={handleClick}
             >
               <img className="sidebar-icons" src={Contacts} alt="Contacts" />
-              Maintenance
+            Operations & Maintenance 
             </NavLink>
             <Collapse in={copen} timeout="auto" unmountOnExit>
               <List className="listgroup" component="div" disablePadding>
@@ -77,6 +77,9 @@ export const MainListItems = ({ open }) => {
                 </NavLink>
                 <NavLink to="highway" className="collapseStyle">
                   Highway
+                </NavLink>
+                <NavLink to="highwayprogress" className="collapseStyle">
+                  Highway Progress
                 </NavLink>
               </List>
             </Collapse>
@@ -120,6 +123,12 @@ export const MainListItems = ({ open }) => {
                   Highway
                 </MenuItem>
               </Link>
+              <Link to="highwayprogress" className="link_style text-black">
+                <MenuItem onClick={(event) => handleMenuItemClick(event)}>
+                  Highway Progress
+                </MenuItem>
+              </Link>
+
               {/* <Link to="highway-safety" className="link_style text-black">
                 <MenuItem onClick={(event) => handleMenuItemClick(event)}>
                   Highway

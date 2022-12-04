@@ -1,6 +1,6 @@
 import { Box, LinearProgress, Paper, Typography } from "@mui/material";
 import React from "react";
-import Intersection from "../Assests/Images/intersection.png";
+import Intersection from "../Assests/Images/Intersection.png";
 
 
 
