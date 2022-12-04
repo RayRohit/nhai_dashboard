@@ -8,6 +8,11 @@ import Grid from "@mui/material/Grid";
 import Switch, { SwitchProps } from "@mui/material/Switch";
 import { styled } from "@mui/material/styles";
 import Inter from "../Assests/Images/Inter.png";
+import cross from '../Assests/Images/cross.png'
+import service from '../Assests/Images/service.png'
+import damaged from '../Assests/Images/damaged.png'
+import plantation from '../Assests/Images/plantation.png'
+
 
 import {
   Preferences,
@@ -200,22 +205,22 @@ const Highway = () => {
           xs={12}
           spacing={0}
           justifyContent="center"
-          alignContent="space-evenly"
+          alignContent="space-between"
         >
-          <Stack spacing={2}>
-            <Card
-              variant="outlined"
-              sx={{ height: "90", background: "#273143" }}
-            >
+          <Stack spacing={4}>
+           
+            <Card variant="outlined" sx={{ height: 70, background: "#273143",mt:4 }}>
+              {/* sx={{ height: 60 }} */}
               <CardContent>
                 <Stack
                   direction="row"
                   spacing={1}
                   alignItems="center"
                   justifyContent="space-between"
+                  
                 >
                   <Stack direction="row" spacing={3} alignItems="center">
-                    <img height={30} src={Inter} />
+                    <img height={30} src={service} />
                     <Typography
                       sx={{ fontSize: 14 }}
                       color="#E4E6E9"
@@ -224,10 +229,10 @@ const Highway = () => {
                       Service Road
                     </Typography>
                   </Stack>
-                  {/* <Box>
-                    <ProgressCard value="2.996" />
-                  </Box> */}
 
+                  {/* <Box>
+                    <ProgressCard value="0" />
+                  </Box> */}
                   <Typography
                     sx={{ fontSize: 14, fontWeight: 600,color:'#e4e6e9' }}
                     gutterBottom
@@ -237,7 +242,7 @@ const Highway = () => {
                 </Stack>
               </CardContent>
             </Card>
-            <Card variant="outlined" sx={{ height: 90, background: "#273143" }}>
+            <Card variant="outlined" sx={{ height: 70, background: "#273143" }}>
               {/* sx={{ height: 60 }} */}
               <CardContent>
                 <Stack
@@ -269,7 +274,7 @@ const Highway = () => {
                 </Stack>
               </CardContent>
             </Card>
-            <Card variant="outlined" sx={{ height: 90, background: "#273143" }}>
+            <Card variant="outlined" sx={{ height: 70, background: "#273143" }}>
               <CardContent>
                 <Stack
                   direction="row"
@@ -278,7 +283,7 @@ const Highway = () => {
                   justifyContent="space-between"
                 >
                   <Stack direction="row" spacing={3} alignItems="center">
-                    <img height={30} src={Inter} />
+                    <img height={30} src={damaged} />
                     <Typography
                       sx={{ fontSize: 14 }}
                       color="#E4E6E9"
@@ -301,7 +306,7 @@ const Highway = () => {
                 </Stack>
               </CardContent>
             </Card>
-            <Card variant="outlined" sx={{ height: 90, background: "#273143" }}>
+            <Card variant="outlined" sx={{ height: 70, background: "#273143" }}>
               <CardContent>
                 <Stack
                   direction="row"
@@ -310,7 +315,7 @@ const Highway = () => {
                   justifyContent="space-between"
                 >
                   <Stack direction="row" spacing={3} alignItems="center">
-                    <img height={30} src={Inter} />
+                    <img height={30} src={plantation} />
                     <Typography
                       sx={{ fontSize: 14 }}
                       color="#E4E6E9"
@@ -334,7 +339,7 @@ const Highway = () => {
                 </Stack>
               </CardContent>
             </Card>
-            <Card variant="outlined" sx={{ height: 90, background: "#273143" }}>
+            <Card variant="outlined" sx={{ height: 70, background: "#273143" }}>
               <CardContent>
                 <Stack
                   direction="row"
@@ -343,7 +348,7 @@ const Highway = () => {
                   justifyContent="space-between"
                 >
                   <Stack direction="row" spacing={3} alignItems="center">
-                    <img height={30} src={Inter} />
+                    <img height={30} src={cross} />
                     <Typography
                       sx={{ fontSize: 14 }}
                       color="#E4E6E9"
